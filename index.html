@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/addons/p5.sound.min.js"></script>
+    <script src="node_modules/mathjs/dist/math.js"></script>
+    <script src="sketch.js"></script>
+    <script src="point.js"></script>
+    <script src="linearRegression.js"></script>
+    <!-- <script src="/usr/local/bin/math.js" type="text/javascript"></script> -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+
+  </head>
+  <body>
+    <h1>Linear Regression</h1>
+    <p>y = f(x) = w*x + b</p>
+    <p> w : weight, b : bias</p>
+    <label>Weight (w): </label>
+    <input type="text" id="txtWeight" name="txtWeight"><br><br>
+    <label>Bias (b): </label>
+    <input type="text" id="txtBias" name="txtBias"><br><br>
+
+    <button id="btnPlot">Plot</button>
+    <button id="btnRandom">Random</button>
+    <button id="btnLRGD">LR-GD</button>
+    <button id="btnReset">Reset</button>
+    <!-- <script src="math.js"></script> -->
+  </body>
+</html>
+
