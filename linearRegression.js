@@ -1,7 +1,7 @@
 
 const numSample = 100;
 const eta = 1;
-
+const errPression = 1e-4
 var X;
 var Y;
 var Y_real;
@@ -64,7 +64,7 @@ function gradientDescent(w_init, eta)
     {
         let gd = grad(w[w.length - 1]);
         // console.log(math.norm(transpose(gd)));
-        if(math.norm(transpose(gd)) < 1e-3)
+        if(math.norm(transpose(gd)) < errPression)
         {
             console.log("Finished after "+i+" iters");
             break;

@@ -1,9 +1,10 @@
 
 class Point{
-    constructor(x, y)
+    constructor(x, y, color = [0, 100, 255])
     {
         this._dx = planeWidth / axisXScale;
         this._dy = - planeHeight / axixYScale;
+        this._color = color;
         this._x = x * this._dx;
         this._y = y * this._dy;
     }
@@ -26,9 +27,17 @@ class Point{
         this._y = val * this._dy;
     }
 
+    get color()
+    {
+        return this._color;
+    }
+    set color(val)
+    {
+        this._color = val;
+    }
     draw()
     {
-        stroke(0, 100, 255);
+        stroke(...this._color);
         strokeWeight(5);
         point(this._x, this._y);
     }
@@ -37,20 +46,15 @@ class Point{
 
 class Line
 {
-    constructor(start, end, color)
+    constructor(start, end, color = [201, 201, 0])
     {
         this._start = start;
         this._end = end;
-        if(color == undefined)
-            this._color = [201, 201, 0];
-        else
-            this._color = color;
+        this._color = color;
     }
     draw()
     {
-        stroke(this._color[0],
-             this._color[1],
-             this._color[2] );
+        stroke(...this._color);
         strokeWeight(2);
         line(this._start._x, this._start._y,
             this._end._x, this._end._y);
