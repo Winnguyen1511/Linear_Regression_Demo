@@ -5,6 +5,7 @@ Major: Embedded System - Computer Science
 University: Danang University of Sciences and Technology  
 ## About
 Here are some demo for those learning AI and ML or DL. This will demonstrate how [Linear regression](https://en.wikipedia.org/wiki/Linear_regression) work by [Gradient Descent](https://en.wikipedia.org/wiki/Gradient_descent). You can check the log of the browser while running it.
+- This is the link I hosted on 000.webhostapp.com: [Linear regression by VictorES](https://lrgd.000webhostapp.com/).
 ## How to use ?
  - Put the weight and bias
  - Press Plot: Plot the y = w*x + b;  
